@@ -2,7 +2,7 @@ let mongodb = require("mongodb");
 
 module.exports = (cb) => {
 
-	let dbURI = 'mongodb://localhost:27017/beatIt';
+	let dbURI = 'mongodb://localhost:27017/emiley';
 
 	mongodb.MongoClient.connect(dbURI, {
       promiseLibrary: Promise 

@@ -4,7 +4,7 @@ let errorHandler = (err, req, res, next) => {
 		return next(err);
 	}
 	res.status(500);
-	res.send('Something is not right. Can you please contact my God.');
+	res.send('My heart is having some obstecles.');
 }
 
 module.exports = errorHandler;
