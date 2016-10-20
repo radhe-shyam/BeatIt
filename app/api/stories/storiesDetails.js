@@ -15,7 +15,7 @@ module.exports = (req, res) => {
 			[
 				{
 					$match:{
-						"_id" : mongodb.ObjectID("58090fcfe08c6d1311e338cc")
+						"_id" : mongodb.ObjectID(id)
 					}
 				},
 				{
@@ -43,7 +43,7 @@ module.exports = (req, res) => {
 				}
 			])
 			.then((result) => {
-				if (result) {
+				if (!util.isVoid(result)) {
 					util.sendData(res, result);
 				} else {
 					util.sendWrongInputError(res, 'Story not found.');

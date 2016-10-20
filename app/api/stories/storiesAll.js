@@ -16,14 +16,9 @@ module.exports = (req, res) => {
 			{
 				$project:{
 					location:1,
-					description:1,
 					titlePicture:1,
-					pictures:1,
 					"owner._id":1,
 					"owner.name":1,
-					"owner.age":1,
-					"owner.gender":1,
-					"owner.username":1,
 					"owner.email":1,
 					"owner.profilePictureUrl":1,
 				}

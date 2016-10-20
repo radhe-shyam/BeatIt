@@ -6,7 +6,8 @@ module.exports = (req, res) => {
 	let validation = util.validateReq(req.body, [
 		'location',
 		'description',
-		'titlePicture'
+		'titlePicture',
+		'pictures'
 	]);
 	if( validation ){
 		util.sendWrongInputError(res, validation);

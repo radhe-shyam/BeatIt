@@ -39,8 +39,8 @@ let routes = () => {
 	app.get('/user/info', require('./api/users/userInfo'));
 	app.get('/user/all', require('./api/users/userAll'));
 
-	app.post('/stories/new', authentication, require('./api/stories/storiesCreate'));
-	app.post('/stories/details', authentication, require('./api/stories/storiesDetails'));
+	app.post('/stories/create', authentication, require('./api/stories/storiesCreate'));
+	app.get('/stories/details', authentication, require('./api/stories/storiesDetails'));
 	app.get('/stories/all', authentication, require('./api/stories/storiesAll'));
 
 };
