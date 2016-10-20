@@ -8,6 +8,7 @@ module.exports = class {
 		this.username = userObject.username;
 		this.email = userObject.email;
 		this.password = userObject.password;
+		this.profilePictureUrl = userObject.profilePictureUrl;
 		this.authenticationKey = [];
 		this.timestamp = new Date().valueOf();
 	}
@@ -50,7 +51,6 @@ module.exports = class {
 					{password: password}
 				]},
 			{
-				_id: 0,
 				authenticationKey: 0,
 				password: 0,
 				timestamp: 0
@@ -101,5 +101,7 @@ var sample = {
 	username:"radheShyam",
 	email:"radhe@gmail.com",
 	password:"radaf",
-	authenticationKey:[]
+	authenticationKey:[],
+	profilePictureUrl: "",
+	timestamp: ""
 }
